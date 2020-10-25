@@ -1,0 +1,2 @@
+-- ALTER ROLE admin SUPERUSER;
+-- CREATE USER postgres SUPERUSER;

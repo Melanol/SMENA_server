@@ -1,0 +1,13 @@
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+admin
+admin@example.com
+adminadmin123
+adminadmin123
+python manage.py loaddata initial_data.json
+python manage.py runserver
+
+# Start a new terminal for django-rq
+cd SMENA_server
+python manage.py rqworker default

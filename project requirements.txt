@@ -1,0 +1,6 @@
+python==3.8.5
+postgreSQL==9.6
+redis==5.0.7
+django==1.11.29
+rq==1.0
+django-rq==2.0
