@@ -14,7 +14,7 @@ from django_rq import job
 from .models import *
 
 
-# TODO: Docker-compose
+
 # TODO: Kitchen PDFs have 2 pages instead of 1
 # TODO: Proper tests
 @job
@@ -67,7 +67,7 @@ def render_pdf(json_data):
         f.write(response.content)
 
     # Change check status to "rendered":
-    # TODO: files are dead on the server/admin
+    # TODO: Attached files cannot be accessed at server/admin
     checks = Check.objects.filter(order__id=json_data['id'])
     for check in checks:
         check.status = 'r'
